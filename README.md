@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.zhaw.ch/raw/PathFinder/PSIT3-FS20-IT18ta_WIN-Team5/master/asset/RaceTrack_Logo.png" alt="RaceTrack Logo" height="250">
+  <img src="https://github.com/Beomar97/RaceTrack/blob/main/asset/RaceTrack_Logo.png" alt="RaceTrack Logo" height="250">
 
   <br>
 
