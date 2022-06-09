@@ -1,0 +1,156 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Academic Title Page
+% LaTeX Template
+% Version 2.0 (17/7/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (LaTeX - Title Creation) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for 
+% including it in another document. To do this, you have two options: 
+%
+% 1) Copy/paste everything between \begin{document} and \end{document} 
+% starting at \begin{titlepage} and paste this into another LaTeX file where you 
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage}, rename
+% this file and move it to the same directory as the LaTeX file you wish to add it to. 
+% Then add \input{./<new filename>.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Papier und Sprache
+\documentclass[a4paper,10pt]{article}
+\usepackage[top=1in, bottom=1.25in, left=0.75in, right=0.75in, a4paper]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{ucs}
+\usepackage[ngerman]{babel}
+
+% Schriftart
+\usepackage{cmbright}
+\usepackage{float}
+
+%Farben
+\usepackage[table,dvipsnames]{xcolor}
+\definecolor{lightgray}{gray}{0.9}
+
+% Tablen
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage[export]{adjustbox}
+\setlength\extrarowheight{5pt}
+\usepackage{subcaption}
+
+%Mathe Packete
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% Kopf- und Fusszeile
+\usepackage[headsepline,footsepline]{scrpage2}
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\renewcommand*{\headfont}{\normalfont}
+\ihead{PhIT}
+\chead{Auftrag 1}
+\ohead{M. Forster, M. Berweger}
+\ifoot{26.10.2019}
+\cfoot{Version 1.0}
+\ofoot{Seite $|$ \pagemark}
+
+% Package for Titlepage
+\usepackage{mathpazo}
+
+\usepackage{listings}
+\definecolor{commentgreen}{rgb}{0,0.6,0}
+\definecolor{halfgray}{gray}{0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{ 
+  breaklines=true,                 		% sets automatic line breaking
+  commentstyle=\color{commentgreen},    % comment style
+  extendedchars=true,             		% lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   		% adds a frame around the code
+  keywordstyle=\color{blue},       		% keyword style
+  numbers=left,                    		% where to put the line-numbers; possible values are (none, left, right)
+  numberstyle=\tiny\color{halfgray}, % the style that is used for the line-numbers
+  rulecolor=\color{halfgray},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  stringstyle=\color{mymauve},     		% string literal style
+  tabsize=1,	                   		% sets default tabsize to 2 spaces
+  title=\lstname,                   	% show the filename of files included with \lstinputlisting; also try caption instead of title
+  showstringspaces=false,
+}
+\lstdefinelanguage{bm}{
+	alsoletter=/,
+    morekeywords={METHOD, STARTTIME, STOPTIME, DT, INIT, d/dt, sqrt},
+    sensitive=TRUE, % keywords are not case-sensitive
+    morecomment=[s]{\{}{\}}, % s is for start and end delimiter
+}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+%\usepackage[T1]{fontenc} % Output font encoding for international characters
+\begin{document}
+%\usepackage{mathpazo} % Palatino font -> Moved zo main.tex
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	\newcommand{\HRule}{\rule{\linewidth}{0.2mm}} % Defines a new command for horizontal lines, change thickness here
+	
+	\center % Centre everything on the page
+	
+	%------------------------------------------------
+	%	Headings
+	%------------------------------------------------
+	\textsc{\LARGE ZHAW Zürcher Hochschule für Angewandte Wissenschaften}\\[1.5cm] % Main heading such as the name of your university/college
+	%\textsc{\Large PhIT}\\[0.5cm] % Major heading such as course name
+	%\textsc{\large Auftrag 1}\\[0.5cm] % Minor heading such as course title
+	
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	\HRule\\[0.6cm]
+	\includegraphics[scale=0.4]{img/RaceTrack_Logo.png}
+	%{\huge\bfseries Simulation eines Zweikörperproblems}\\[0.4cm] % Title of your document
+	\HRule\\[1.5cm]
+	
+	%------------------------------------------------
+	%	Author(s)
+	%------------------------------------------------
+	{\large\textit{Autoren}}\\[0.6cm]
+	Marco \textsc{Forster}\\ % Your name
+	forstma1@students.zhaw.ch\\~\\
+	Manuel \textsc{Berweger}\\ % Your name
+	berweman@students.zhaw.ch\\~\\
+	Marvin \textsc{Tseng}\\ % Your name
+	tsengmar@students.zhaw.ch\\~\\
+	Dan \textsc{Hochstrasser}\\ % Your name
+	hochsdan@students.zhaw.ch\\~\\
+	
+	%------------------------------------------------
+	%	Date
+	%------------------------------------------------
+	\vfill\vfill\vfill % Position the date 3/4 down the remaining page
+	{\large05. März 2020} % Date, change the \today to a set date if you want to be precise
+	
+	%------------------------------------------------
+	%	Logo
+	%------------------------------------------------
+	%\vfill\vfill
+	%\includegraphics[width=0.2\textwidth]{placeholder.jpg}\\[1cm] % Include a department/university logo - this will require the graphicx package
+	 
+	%----------------------------------------------------------------------------------------
+	
+	\vfill % Push the date up 1/4 of the remaining page
+
+\end{titlepage}
+\end{document}

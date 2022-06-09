@@ -1,0 +1,60 @@
+% ---
+% Author: Manuel Berweger
+% Version: 0.1
+% ---
+
+% Paper and language
+\documentclass[a4paper,10pt]{report}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2cm, right=2cm, a4paper]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{ucs}
+\usepackage[english]{babel}
+\usepackage{cmbright} % font
+\usepackage{dirtytalk} % quote
+\usepackage[hidelinks]{hyperref}
+
+% Package for Titlepage
+% located here because the titlepage is included after \begin{document}
+\usepackage{mathpazo}
+
+\input{conf/colors.tex}
+\input{conf/header_and_footer.tex}
+\input{conf/listings.tex}
+\input{conf/tables.tex}
+\input{conf/chapters_and_sections.tex}
+\input{conf/math.tex}
+\input{conf/figures.tex}
+\input{conf/glossary.tex}
+
+% Automatic include of all chapters and sections
+\newcommand*{\MaxNumOfChapters}{30}
+\newcommand*{\MaxNumOfSections}{15}
+\usepackage{pgffor}
+
+% Hyperlinks capability
+\usepackage{hyperref}
+
+% Date shown on titlepage and footer
+\def \mydate {21. May 2020}
+
+\begin{document}
+	\input{title_page.tex}
+	\tableofcontents
+	\textnormal{ \\ Wherever we have used masculine pronouns only, this has been done solely for reasons of readability, however the female form is also always intended.}
+	\pagebreak
+
+	\foreach \c in {1,2,...,\MaxNumOfChapters}{%
+		\foreach \s in {1,2,...,\MaxNumOfSections}{%
+			\IfFileExists{Chapter\c/Section\s.tex} {%
+				\input{Chapter\c/Section\s.tex}%
+			}{
+				% files does not exist, so nothing to do
+			}
+		}
+	}
+	\lstlistoflistings
+	\listoffigures
+	\listoftables
+	\clearpage
+	\printnoidxglossaries
+\end{document}

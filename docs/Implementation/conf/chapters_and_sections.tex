@@ -1,0 +1,41 @@
+\usepackage{titlesec}
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+\titleformat
+{\chapter} % command
+[display] % shape
+{\bfseries\huge\itshape} % format
+{} % label
+{2.5ex} % sep
+{
+    \rule{\textwidth}{0.3pt}
+    \vspace{2ex}\\
+    \if\thechapter0
+    \centering
+    \else
+    Chapter \thechapter \ \centering
+    \fi
+} % before-code
+[
+\vspace{2.5ex}
+\rule{\textwidth}{0.3pt}
+] % after-code
+
+
+\titleformat{\section}
+{\newpage\bfseries\LARGE}
+{\thesection.}{0.5em}{}
+%\titlespacing{\section}{0px}{5ex}{1pc}
+
+
+\titleformat{\subsection}
+{\bfseries\Large}
+{\thesubsection.}{0.5em}{}
+%\titlespacing{\subsection}{0px}{1.5ex plus .1ex minus .2ex}{1pc}
+
+\titleformat{\subsubsection}
+{\bfseries\large}
+{\thesubsubsection.}{0.5em}{}
+%\titlespacing{\subsubsection}{0px}{1.5ex plus .1ex minus .2ex}{1pc}

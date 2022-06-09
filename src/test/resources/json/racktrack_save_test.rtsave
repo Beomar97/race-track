@@ -1,0 +1,82 @@
+{
+  "gameMode": "BobbyCarEngine",
+  "currentPlayerId": 1,
+  "trackName": "The Donut",
+  "players": [
+    {
+      "id": 0,
+      "car": {
+        "velocityHistory": [
+          {
+            "xy": [
+              0,
+              0
+            ]
+          }
+        ],
+        "route": [],
+        "color": {
+          "red": 1.0,
+          "green": 0.0,
+          "blue": 0.0,
+          "opacity": 1.0
+        },
+        "crashed": false,
+        "offTrack": false
+      },
+      "name": "Hans",
+      "finished": false,
+      "retired": false
+    },
+    {
+      "id": 1,
+      "car": {
+        "velocityHistory": [
+          {
+            "xy": [
+              0,
+              0
+            ]
+          }
+        ],
+        "route": [],
+        "color": {
+          "red": 0.0,
+          "green": 0.0,
+          "blue": 1.0,
+          "opacity": 1.0
+        },
+        "crashed": false,
+        "offTrack": false
+      },
+      "name": "Peter",
+      "finished": false,
+      "retired": false
+    },
+    {
+      "id": 2,
+      "car": {
+        "velocityHistory": [
+          {
+            "xy": [
+              0,
+              0
+            ]
+          }
+        ],
+        "route": [],
+        "color": {
+          "red": 0.0,
+          "green": 0.0,
+          "blue": 1.0,
+          "opacity": 1.0
+        },
+        "crashed": false,
+        "offTrack": false
+      },
+      "name": "Karl",
+      "finished": false,
+      "retired": false
+    }
+  ]
+}

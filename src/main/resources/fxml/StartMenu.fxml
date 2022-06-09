@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbox" prefHeight="200.0" prefWidth="100.0" stylesheets="@../css/bootstrap.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox fx:id="hboxImageView" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <ImageView fitHeight="526.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../logo/RaceTrack_Logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+        <BorderPane prefHeight="200.0" prefWidth="200.0">
+            <center>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="newGame" alignment="CENTER" mnemonicParsing="false" prefWidth="400.0" styleClass="lg" text="New Game" textAlignment="CENTER">
+                            <font>
+                                <Font size="35.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="15.0" top="15.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="loadGame" mnemonicParsing="false" prefWidth="400.0" styleClass="lg" text="Load Game">
+                            <font>
+                                <Font size="35.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="15.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="tracks" layoutX="210.0" layoutY="107.0" mnemonicParsing="false" prefWidth="400.0" styleClass="lg" text="Tracks">
+                            <font>
+                                <Font size="35.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="15.0" />
+                            </VBox.margin>
+                        </Button>
+                  <Button fx:id="rules" mnemonicParsing="false" prefWidth="400.0" styleClass="lg" text="Rules">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Button>
+                        <Button fx:id="quitGame" mnemonicParsing="false" prefWidth="400.0" styleClass="lg" text="Quit Game">
+                            <font>
+                                <Font size="35.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="15.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+            </center>
+            <bottom>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="credits" mnemonicParsing="false" prefWidth="180.0" styleClass="lg" text="Credits">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets right="40.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="viewHighScore" mnemonicParsing="false" prefWidth="180.0" styleClass="lg" text="View High Score">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            </bottom>
+        </BorderPane>
+    </children>
+</VBox>

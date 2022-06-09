@@ -1,0 +1,57 @@
+{
+  "currentPlayerId": 0,
+  "gameMode": "com.pathfinder.racetrack.model.GoKartEngine",
+  "trackName": "The Misty Forest",
+  "players": [
+    {
+      "id": 0,
+      "car": {
+        "velocityHistory": [
+          {
+            "xy": [
+              3,
+              -1
+            ]
+          }
+        ],
+        "route": [
+          {
+            "xy": [
+              3,
+              17
+            ]
+          },
+          {
+            "xy": [
+              3,
+              16
+            ]
+          }
+        ],
+        "color": {
+          "red": 1.0,
+          "green": 0.0,
+          "blue": 0.0,
+          "opacity": 1.0,
+          "platformPaint": {
+            "argb": -65536,
+            "r": 1.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0,
+            "type": "COLOR",
+            "proportional": false,
+            "isMutable": false
+          }
+        },
+        "crashed": false,
+        "offTrack": false
+      },
+      "name": "Player 1",
+      "finished": false,
+      "retired": false,
+      "rank": 0,
+      "nbrOfMoves": 0
+    }
+  ]
+}

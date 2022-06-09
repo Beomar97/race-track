@@ -1,0 +1,23 @@
+\section{Main Use Case}
+	The main use case of RaceTrack is a player or a group of players playing a round of RaceTrack:
+	\begin{enumerate}
+		\item On his computer, the player starts the application, which he already downloaded and installed.
+		\item After the main menu finishes loading, the player starts a new game by selecting the corresponding entry in the menu.
+		\item The player configures the coming game session with the options to his liking, e.g. which track to be played on, the number of players, the colors of the cars, which game mode to be played with and more. In the end, he lets the configured session to be created by the game.
+		\item After the game has started, the player can make his first turn.
+		\item The first player selects his move for his current turn, based on the given possible moves the player can choose from. The available options are being shown on the track.
+		\begin{itemize}
+			\item The player's possible moves are calculated at the beginning of his turn, based on his current velocity and previously selected moves.
+		\end{itemize}
+		\item The player's car moves to the selected position on the track.
+		\\~\\ \textit{As a turn-based game, every other player gets to do his turn next, before the same player gets the ability to do another turn. Each player repeats steps 5-6 until it's the first player's turn again.}
+		\item The game continues, turn after turn, until every player crosses the finish line.
+		\item While playing the game, the following rules are being enforced:
+		\begin{itemize}
+			\item It is not possible to drive backward.
+			\item It is not possible to drive to a position already occupied by another player.
+			\item It is not possible drive past the track limits, doing so will result in different consequences, depending on the game mode selected before the start of the session.
+		\end{itemize}
+		\item After the session finishes, the players' results are displayed in comparison with the track's high score.
+		\item The player can choose to return to the main menu, restart the session with the same settings, or to end the game (application) completely.
+	\end{enumerate}

@@ -1,0 +1,45 @@
+Korrekturen
+
+	Tabelle formatieren
+	spielregeln separat  aufführten und von den additional requirements trennen
+	Use cases test
+
+	Risk: what could turn the project down
+	Missing knolleged -> specialise game, differentiate from others
+	neue regeln ggf auf papier aufzeichnen
+	Use casees können ggf zusammengefasst werden
+	Use case: Tack auswählen
+	Use case muss einen nutzen bringen !startGame
+	prio setzen fpr use cases
+	Use cases und risks auf timeline darstellen
+
+	Gossary: nur projekt spezifische wörter (car, track, scene, gameEngine?)
+
+
+Wie weiter:
+
+
+	PSIT3 Resultat wird wicjttig
+
+	Additional requirements finden (wenige aber gute)
+
+	Domänen modell:static view, zeigt wichtige Probleme und konzepte, muss das problem erklären können ohne weitere begriffe und erklärungen
+		stellt classen kandidaten
+		hüslipapier ist teil des domänen models und teil der lösung aber keine klasse
+		Problem diagram !klassendiagram
+
+	Use cases: dynamic
+
+	DM und UCs sind gelinkt zu einande, müssen konstistent sein
+
+
+
+
+	Design interaction diagram: Internes diagramm. welche klasse wird welche aktionen aus den System Sequence Diagramm erhalten und wie werden sie weiter gegeben? -> Daraus kann das klassendiagramm abgeleitet werden
+
+	use case in minimal versin visualisieren
+
+	alle usecacses fully dessed schreiben
+
+	PLanning: work distribution
+	Risk list managen: solved, disapiered, newly appread, ...

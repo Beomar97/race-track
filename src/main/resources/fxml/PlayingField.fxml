@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<HBox fx:id="hbox" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../css/bootstrap.css" xmlns="http://javafx.com/javafx">
+    <children>
+        <VBox fx:id="vbox" maxWidth="218.0" minWidth="218.0" prefWidth="218.0">
+            <children>
+                <StackPane prefWidth="60.0">
+                    <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../logo/RaceTrack_Logo.png"/>
+                            </image>
+                        </ImageView>
+                    </children>
+                </StackPane>
+                <StackPane prefHeight="150.0" prefWidth="200.0">
+                    <children>
+                        <TextArea fx:id="textOutput">
+                            <padding>
+                                <Insets bottom="9.0" left="9.0" right="9.0" top="9.0"/>
+                            </padding>
+                            <StackPane.margin>
+                                <Insets bottom="9.0" top="9.0"/>
+                            </StackPane.margin>
+                        </TextArea>
+                    </children>
+                </StackPane>
+                <Button fx:id="btnMainMenu" maxWidth="200.0" mnemonicParsing="false" text="Main Menu">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="9.0" left="9.0" right="9.0" top="9.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnSave" maxWidth="200.0" mnemonicParsing="false" text="Save">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="9.0" left="9.0" right="9.0" top="9.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnReset" maxWidth="200.0" mnemonicParsing="false" text="Reset">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="9.0" left="9.0" right="9.0" top="9.0"/>
+                    </VBox.margin>
+                </Button>
+                <ImageView fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../logo/RaceTrack_Icon.png"/>
+                    </image>
+                    <VBox.margin>
+                        <Insets left="9.0" right="9.0"/>
+                    </VBox.margin>
+                </ImageView>
+            </children>
+        </VBox>
+        <ScrollPane fx:id="mapContainer" fitToHeight="true" fitToWidth="true">
+            <content>
+                <StackPane>
+                    <children>
+                        <ImageView fx:id="mapTrack" fitHeight="826.0" fitWidth="1126.0" pickOnBounds="true"/>
+                        <Canvas fx:id="mapRoute" height="826.0" width="1126.0"/>
+                        <Canvas fx:id="mapSuggestions" height="826.0" width="1126.0"/>
+                        <Canvas fx:id="map" height="826.0" width="1126.0"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="18.0" left="18.0" right="18.0" top="18.0"/>
+                    </padding>
+                </StackPane>
+            </content>
+        </ScrollPane>
+    </children>
+</HBox>

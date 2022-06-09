@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="200.0" prefWidth="100.0" stylesheets="@../css/bootstrap.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="526.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../logo/RaceTrack_Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <BorderPane prefHeight="200.0" prefWidth="250.0">
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Goal" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The objective of the game is to be the first one to reach the finish line." textAlignment="JUSTIFY" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Environment" textAlignment="JUSTIFY" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The game board is a checkered piece of paper with a track, starting line and finish line. All the grid points on the track are accessible by the players with their respective moves." textAlignment="JUSTIFY" wrappingWidth="400.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The Course of the game" textAlignment="JUSTIFY" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="All players start from the starting line. Player 1, who is registered first in RaceTrack, starts with the first move. After each move of a participant, the next competitor takes his turn until the first player reaches the finish line. After that, the players can choose to end the running game session at that moment or to continue until every other player also reaches the finish line. A finished player will not be able to move again." textAlignment="JUSTIFY" wrappingWidth="400.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Moving around" textAlignment="JUSTIFY" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Each player's first move must lead to one of the five neighbors of the starting point moving forward. On the first move, it is not possible to go backwards. In each following move, the so-called base for this move is determined. The base is dependent on repeating the previous move, both horizontally and vertically. This calculation in RaceTrack is also known as velocity in the game." textAlignment="JUSTIFY" wrappingWidth="400.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Example" textAlignment="JUSTIFY" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="If the player last moved two boxes to the right and four boxes up, the main point is now two boxes to the right and four above the current starting point. The player now can move directly to the main point or one of his eight neighbors." textAlignment="JUSTIFY" wrappingWidth="400.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Conditions" textAlignment="CENTER" wrappingWidth="400.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The cars must stay within the track boundaries. This applies to every move. Leaving the road will lead to a crash. Depending on the selected game mode, the game will react differently to a crash. Points that are occupied by another car cannot be approached." textAlignment="JUSTIFY" wrappingWidth="400.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Game Modes and Crash Handling" textAlignment="CENTER" wrappingWidth="400.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="There are currently three unique game modes available:" textAlignment="JUSTIFY" wrappingWidth="400.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="**Game mode 1:** When the game mode *Continue with minimum velocity and no cceleration until the track is reached again* is selected during game creation:1. The player's velocity resets.2. The player does not accelerate until the track is reached again." textAlignment="JUSTIFY" wrappingWidth="400.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="**Game mode 2:** When the game mode *Retire from the race* is selected during game creation:1. The player *crashes* and receives a corresponding notification about it.2. The player retires from the race and will not be able to do any more moves during this game session." textAlignment="JUSTIFY" wrappingWidth="400.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="**Game mode 3:** When the game mode *Reset position to last valid point and reset velocity* is selected during game creation:1. The player *crashes* and receives a corresponding notification about it.2. The player's velocity resets.3. The player's car resets to his last valid position on the track." textAlignment="JUSTIFY" wrappingWidth="400.0" />
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Game Rules" textAlignment="CENTER" wrappingWidth="340.7841796875" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </top>
+         <bottom>
+            <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="btnMainMenu" alignment="CENTER" mnemonicParsing="false" text="Main Menu" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" top="15.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</VBox>

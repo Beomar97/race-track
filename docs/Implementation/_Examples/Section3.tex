@@ -1,0 +1,44 @@
+\section{Random java listing}
+This is just an inline example:
+	\begin{lstlisting}[style=java,caption={A funny little listing example}]
+/**
+ * I also write docs ;)
+ */
+public class HelloWorld {
+	private int mysecretnumber;
+
+	public HelloWorld(int secret) {
+		mysecretnumber = secret;
+		sayHello();
+	}
+
+	private void sayHello() {
+		System.out.println("Hello World")
+	}
+
+	// Start
+	public static void main(String args[]){
+		HelloWorld hw = new HelloWorld(Integer.parseInt(args[0]));
+	}
+}
+	\end{lstlisting}
+
+Now we have a look at a masterpice of coding:
+\lstinputlisting[style=java,caption={A nice piece of code}]{../../src/main/java/com/pathfinder/racetrack/controller/OptionsMenuController.java}
+\subsection{Picutre}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm,height=10cm,keepaspectratio,center]{img/RaceTrack_Logo.png}
+	\caption{$\alpha = 2.000, \eta = 1.000$, RK4 and some blabla}
+\end{figure}
+
+%\gls{ }
+%To print the term, lowercase. For example, \gls{maths} prints mathematics when used.
+%\Gls{ }
+%The same as \gls but the first letter will be printed in uppercase. Example: \Gls{maths} prints Mathematics
+%\glspl{ }
+%The same as \gls but the term is put in its plural form. For instance, \glspl{formula} will write formulas in your final document.
+%\Glspl{ }
+%The same as \Gls but the term is put in its plural form. For example, \Glspl{formula} renders as Formulas.
